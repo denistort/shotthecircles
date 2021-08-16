@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/all.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <section class="game-section">
+        <nav class='game-bar'>
+            <div class='ammo-indicator'>
+                <div class='ammo-text'>Ammo:</div>
+                <div class='ammo-out'>10</div>
+            </div>
+            <div class="score-indicator">
+                <div class='scores-text'>Scores:</div>
+                <div class='scores-out'>0</div>
+            </div>
+            <div class="hp-indicator">10</div>
+            <div class="timer">
+                <div class="timer-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <div class="timer-out">60</div>
+            </div>
+
+            <div class="settings">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+
+        <div class="game-field">
+
+        </div>
+
+        <div class="settings-modal" style='display: none;'>
+            <button class='button-close' id='closemodal'>CLOSE</button>
+        </div>
+
+        <div class="modal-scores" style='display:none'>
+            <h1>Round is over</h1>
+            <h2>Good job</h2>
+            <hr class="hr">
+            <div class="modal-score-line">
+                <div class="modal-scores-line-title">Total Scores: </div>
+                <div class="modal-scores-line-out"></div>
+            </div>
+            <div class="modal-shots-line">
+                <div class="modal-shots-line-title">Total Shots: </div>
+                <div class="modal-shots-line-out"></div>
+            </div>
+
+            <div class="modal-missed-shots-line">
+                <div class="modal-missed-shots-line-title">Missed Shots: </div>
+                <div class="modal-missed-shots-line-out"></div>
+            </div>
+            <button>playagain</button>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* cursor: url('../src/cursor/SniperAim.cur'), auto; */
+}
+
+.game-section{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Encode Sans SC', sans-serif;
+    cursor: url('../src/cursor/SniperAim.cur'), auto;
+}
+.game-field{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.game-bar{
+    width: 100%;
+    height: 30px;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    font-weight:500;
+    cursor: url('../src/cursor/macOS\ 95.cur'), auto;
+    background-color: burlywood;
+
+}
+.ammo-indicator{
+    display:flex;
+}
+.ammo-text{
+    display: inline-block;
+}
+.score-indicator{display: flex;}
+.hp-indicator{}
+.timer{
+    display:flex;
+}
+.timer-icon{
+    margin-right: 10px;
+}
+
+.settings{
+    cursor: pointer;
+}
+
+.settings-modal {
+    width: 100%;
+    height: 100vh;
+    background-color: azure;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    cursor: url('../src/cursor/macOS\ 95.cur'), auto;
+    padding: 50px;
+}
+
+.new-div{
+    width: 50px;
+    height: 50px;
+    border-radius:50%;
+    border: 1px solid black;
+    position: absolute;
+}
+
+.modal-scores{
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    top: calc(50% - 300px);
+    left: calc(50% - 300px);
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(128, 128, 128);
+    box-shadow: 0 0 14px black;
+    flex-direction: column;
+    cursor: url('../src/cursor/macOS\ 95.cur'), auto;
+}
+
+.modal-score-line,.modal-shots-line, .modal-missed-shots-line{
+    font-size: 25px;
+    font-weight:500;
+    display: flex;
+    
+}
+
+.modal-missed-shots-line{
+    display: flex;
+}
+
+h1, h2 {
+    font-size: 35px;
+}
+
+.modal-missed-shots-line-title, .modal-shots-line-title, .modal-scores-line-title{
+    margin-right: 10px;
+}
+
+.hr{
+    width: 60%;
+}
